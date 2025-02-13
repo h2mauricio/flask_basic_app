@@ -1,6 +1,9 @@
 # flask_basic_app
 Basic Web Application with Flask
 
+# Introduction
+This application is a basic web application that uses Flask to create a web server. The application has a two single routes. One of the routes returns a simple string, while the other returns a JSON object.
+
 
 # Setup Python Project using UV
 
@@ -51,19 +54,36 @@ uv pip install -r pyproject.toml --all-extras
 ```
 
 ## Running Flask
+After installing the dependencies, the Flask application can be run. The Flask application can be executed using the following command:
 
-Pass Argument to Flask executable
+
 ```bash
+
 flask --app app --debug run
 ```
+, where:
+- --app: Identifies the Python file to run (which is called in this example app.py), and 
+- --debug: Run the server in debug mode
 
-This also can be done by exporting the settings manually:
+This also can be done by exporting the settings manually (In Windows use `set` instead of `export`) :
 ```bash
 export FLASK_APP=app.py
 export FLASK_ENV=development
 ```
-
 - Run Flask
 ```bash
 flask run
 ```
+
+## Returning JSON
+- Test in command line return a serialized object as JSON
+```bash
+curl -X GET -i localhost:5000
+curl -X GET -i localhost:5000/json
+```
+
+https://www.coursera.org/videos/cloud-virtualization-containers-api-duke/85uqS?authProvider=duke&page=2&partners=Duke+University&query=API%2C+Python&sortBy=BEST_MATCH&source=search&startAt=163.676
+
+## Optional
+REduce the size of the command prompt:
+export PS1="[\[\033[01;32m\]\u\[\033[00m\]: \[\033[01;34m\]\W\[\033[00m\]]\$ "

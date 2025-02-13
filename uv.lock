@@ -53,10 +53,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "flask" },
+    { name = "jsonify" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "flask", specifier = ">=3.1.0" }]
+requires-dist = [
+    { name = "flask", specifier = ">=3.1.0" },
+    { name = "jsonify", specifier = ">=0.5" },
+]
 
 [[package]]
 name = "itsdangerous"
@@ -78,6 +82,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/af/92/b3130cbbf5591acf9
 wheels = [
     { url = "https://files.pythonhosted.org/packages/bd/0f/2ba5fbcd631e3e88689309dbe978c5769e883e4b84ebfe7da30b43275c5a/jinja2-3.1.5-py3-none-any.whl", hash = "sha256:aba0f4dc9ed8013c424088f68a5c226f7d6097ed89b246d7749c2ec4175c6adb", size = 134596 },
 ]
+
+[[package]]
+name = "jsonify"
+version = "0.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/63/5d/44962520aa458852bbd40ac5553dd1431f6367ab31f39ee7650b57136d9a/jsonify-0.5.tar.gz", hash = "sha256:f340032753577575e9777835809b283fdc9b251867d5d5600389131647f8bfe1", size = 1007 }
 
 [[package]]
 name = "markupsafe"
