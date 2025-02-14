@@ -70,6 +70,7 @@ This also can be done by exporting the settings manually (In Windows use `set` i
 export FLASK_APP=app.py
 export FLASK_ENV=development
 ```
+
 - Run Flask
 ```bash
 flask run
@@ -85,5 +86,5 @@ curl -X GET -i localhost:5000/json
 ## Optional
 Reduce the size of the command prompt (in Windows use set instead of export):
 ```bash
-export PS1="[\[\033[01;32m\]\u\[\033[00m\]: \[\033[01;34m\]\W\[\033[00m\]]\$ "
+export PS1="[\[\033[01;32m\]\u\[\033[00m\]: \[\033[01;34m\]\W\[\033[00m\]]\$"
 ```
