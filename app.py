@@ -16,3 +16,6 @@ def string_response():
 def json_response():
     #return {"message": "Hello JSON!"}
     return jsonify(message="Hello jsonify!")
+
+if __name__ == "__main__":
+    app.run(debug=True)
