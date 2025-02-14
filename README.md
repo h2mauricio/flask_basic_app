@@ -82,8 +82,8 @@ curl -X GET -i localhost:5000
 curl -X GET -i localhost:5000/json
 ```
 
-https://www.coursera.org/videos/cloud-virtualization-containers-api-duke/85uqS?authProvider=duke&page=2&partners=Duke+University&query=API%2C+Python&sortBy=BEST_MATCH&source=search&startAt=163.676
-
 ## Optional
-REduce the size of the command prompt:
+Reduce the size of the command prompt (in Windows use set instead of export):
+```bash
 export PS1="[\[\033[01;32m\]\u\[\033[00m\]: \[\033[01;34m\]\W\[\033[00m\]]\$ "
+```
